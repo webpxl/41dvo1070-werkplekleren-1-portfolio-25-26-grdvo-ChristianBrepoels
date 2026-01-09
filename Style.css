@@ -11,7 +11,7 @@ body {
 #header{
     width: 100%;
     height: 100vh;
-background-image: url(Assets/Tijdelijk/CB.png);
+background-image: url(Assets/CB.png);
 background-size: cover;
 background-position: center;
 }
