@@ -2,47 +2,124 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio Website - Christian Brepoels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Christian Brepoels</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-<div id="header">
+
+<!-- Header -->
+<header id="header">
     <div class="container">
         <nav>
-            <img src="Assets/Text.png" class="logo">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header-text">
-            <p>Grafisch Designer</p>
-            <h1>Ik ben <span>Christian</span><br></br>Brepoels</h1>
+            <h1>Christian <span>Brepoels</span></h1>
+            <p>Grafisch Designer & Programmeur</p>
         </div>
     </div>
-</div>
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
+</header>
 
+<main>
+    <!-- About -->
+    <section id="about" class="fade-in">
+        <div class="container about-container">
+            <div class="about-col-1">
+                <img src="Assets/CB.png" alt="Christian Brepoels">
             </div>
-            <div class="about-col-2"></div>
+            <div class="about-col-2">
+                <p>Hallo, ik ben Christian Brepoels, 22 jaar oud en student Digitale Vormgeving. Design is mijn passie en ik geniet ervan om creatieve ideeën om te zetten in visuele concepten. Ik werk graag met tools zoals Figma, Illustrator, Photoshop, Canva en Blender, en heb daarnaast kennis van HTML, CSS, JavaScript en Lua.</p>
+                <p>Naast mijn studie en design werk, luister en maak ik muziek, speel euphonium, en ben ik bezig met componeren en video editing. In mijn vrije tijd kijk ik series en films, speel ik padel, en blijf ik fit. Ook ben ik fanatiek voetballiefhebber.</p>
+                <p>Mijn persoonlijke kwaliteiten zijn vriendelijkheid, flexibiliteit, creativiteit en sociale vaardigheden, wat me helpt goed samen te werken en nieuwe ideeën te ontwikkelen.</p>
             </div>
         </div>
-</div>
+    </section>
 
+    <!-- Skills -->
+    <section id="services" class="fade-in">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Figma</li>
+                <li>Illustrator</li>
+                <li>Photoshop</li>
+                <li>Canva</li>
+                <li>Blender</li>
+                <li>HTML / CSS / JavaScript / Lua</li>
+            </ul>
+        </div>
+    </section>
 
+    <!-- Portfolio -->
+    <section id="portfolio" class="fade-in">
+        <div class="container">
+            <h2>Projecten</h2>
+            <div class="projects-grid">
+                <article class="project">
+                    <img src="Assets/project1.jpg" alt="Project 1 screenshot">
+                    <h3>Voorbeeld Project 1</h3>
+                    <p>Vak: [Vul hier vak in]</p>
+                    <p>Wat ik deed: [Jouw bijdrage]</p>
+                </article>
+                <article class="project">
+                    <img src="Assets/project2.jpg" alt="Project 2 screenshot">
+                    <h3>Voorbeeld Project 2</h3>
+                    <p>Vak: [Vul hier vak in]</p>
+                    <p>Wat ik deed: [Jouw bijdrage]</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speciale sectie: Progress -->
+    <section id="speciale" class="fade-in">
+        <div class="container">
+            <h2>Skills Progress</h2>
+            <div class="skill">
+                <p>HTML</p>
+                <div class="progress-bar"><div class="progress html"></div></div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="progress-bar"><div class="progress css"></div></div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress-bar"><div class="progress js"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: christianbrepoels@gmail.com</p>
+            <p>Telefoon: 112</p>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Christian Brepoels | <a href="privacy.txt">Privacy-richtlijnen</a></p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
 
-/*header*/
-/*nav*/
-/*main*/
-/*footer*/
+
+
 
