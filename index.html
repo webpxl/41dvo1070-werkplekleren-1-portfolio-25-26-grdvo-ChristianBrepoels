@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Christian Brepoels</title>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 
-<!-- Header -->
 <header id="header">
     <div class="container">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#speciale">Speciale</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="header-text">
+
+        <div class="header-text fade-in">
             <h1>Christian <span>Brepoels</span></h1>
             <p>Grafisch Designer & Programmeur</p>
         </div>
@@ -30,21 +32,22 @@
 </header>
 
 <main>
-    <!-- About -->
+
+    <!-- ABOUT -->
     <section id="about" class="fade-in">
         <div class="container about-container">
             <div class="about-col-1">
-                <img src="Assets/CB.png" alt="Christian Brepoels">
+                <img src="Assets/cb.png" alt="Christian Brepoels">
             </div>
             <div class="about-col-2">
-                <p>Hallo, ik ben Christian Brepoels, 22 jaar oud en student Digitale Vormgeving. Design is mijn passie en ik geniet ervan om creatieve ideeën om te zetten in visuele concepten. Ik werk graag met tools zoals Figma, Illustrator, Photoshop, Canva en Blender, en heb daarnaast kennis van HTML, CSS, JavaScript en Lua.</p>
-                <p>Naast mijn studie en design werk, luister en maak ik muziek, speel euphonium, en ben ik bezig met componeren en video editing. In mijn vrije tijd kijk ik series en films, speel ik padel, en blijf ik fit. Ook ben ik fanatiek voetballiefhebber.</p>
-                <p>Mijn persoonlijke kwaliteiten zijn vriendelijkheid, flexibiliteit, creativiteit en sociale vaardigheden, wat me helpt goed samen te werken en nieuwe ideeën te ontwikkelen.</p>
+                <p>Hallo, ik ben Christian Brepoels, 22 jaar oud en student Digitale Vormgeving.</p>
+                <p>Ik werk met Figma, Illustrator, Photoshop, Canva en Blender en heb kennis van HTML, CSS, JavaScript en Lua.</p>
+                <p>Creativiteit, flexibiliteit en samenwerken zijn mijn sterke punten.</p>
             </div>
         </div>
     </section>
 
-    <!-- Skills -->
+    <!-- SKILLS -->
     <section id="services" class="fade-in">
         <div class="container">
             <h2>Skills</h2>
@@ -59,66 +62,88 @@
         </div>
     </section>
 
-    <!-- Portfolio -->
+    <!-- PORTFOLIO -->
     <section id="portfolio" class="fade-in">
         <div class="container">
             <h2>Projecten</h2>
+
+            <h3>Schoolprojecten</h3>
             <div class="projects-grid">
+                <!-- Photoshop -->
+                <article class="project"><img src="Assets/schoolproject1.png"><h4>Photoshop</h4></article>
+                <article class="project"><img src="Assets/schoolproject2.png"><h4>Photoshop</h4></article>
+                <article class="project"><img src="Assets/schoolproject3.png"><h4>Photoshop</h4></article>
+
+                <!-- Illustrator -->
+                <article class="project"><img src="Assets/harrypotter.png"><h4>Illustrator</h4></article>
+                <article class="project"><img src="Assets/ninjago.png"><h4>Illustrator</h4></article>
+                <article class="project"><img src="Assets/mylittlepony.png"><h4>Illustrator</h4></article>
+
+                <!-- Dashboard -->
+                <article class="project"><img src="Assets/dashboard.png"><h4>Dashboard Project</h4></article>
+            </div>
+
+            <h3>Niet-schoolprojecten</h3>
+            <div class="projects-grid">
+                <article class="project"><img src="Assets/spotify.png"><h4>Spotify Cover</h4></article>
+                <article class="project"><img src="Assets/musicplaylist.png"><h4>Spotify Playlist</h4></article>
+
                 <article class="project">
-                    <img src="Assets/project1.jpg" alt="Project 1 screenshot">
-                    <h3>Voorbeeld Project 1</h3>
-                    <p>Vak: [Vul hier vak in]</p>
-                    <p>Wat ik deed: [Jouw bijdrage]</p>
-                </article>
-                <article class="project">
-                    <img src="Assets/project2.jpg" alt="Project 2 screenshot">
-                    <h3>Voorbeeld Project 2</h3>
-                    <p>Vak: [Vul hier vak in]</p>
-                    <p>Wat ik deed: [Jouw bijdrage]</p>
+                    <h4>Harmonie Sint Cecilia</h4>
+                    <p>Lid van de harmonie</p>
+                    <a href="https://www.harmoniehoeselt.be/" target="_blank" class="harmonie-link">Bezoek website</a>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- Speciale sectie: Progress -->
+    <!-- SPECIALE -->
     <section id="speciale" class="fade-in">
         <div class="container">
             <h2>Skills Progress</h2>
-            <div class="skill">
-                <p>HTML</p>
-                <div class="progress-bar"><div class="progress html"></div></div>
-            </div>
-            <div class="skill">
-                <p>CSS</p>
-                <div class="progress-bar"><div class="progress css"></div></div>
-            </div>
-            <div class="skill">
-                <p>JavaScript</p>
-                <div class="progress-bar"><div class="progress js"></div></div>
-            </div>
+            <div class="skill"><p>HTML</p><div class="progress-bar"><div class="progress html"></div></div></div>
+            <div class="skill"><p>CSS</p><div class="progress-bar"><div class="progress css"></div></div></div>
+            <div class="skill"><p>JavaScript</p><div class="progress-bar"><div class="progress js"></div></div></div>
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- CONTACT -->
     <section id="contact" class="fade-in">
         <div class="container">
             <h2>Contact</h2>
-            <p>Email: christianbrepoels@gmail.com</p>
-            <p>Telefoon: 112</p>
+
+            <div class="social-icons">
+                <a href="mailto:christianbrepoels@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img src="Assets/gmail.png" alt="Email">
+                </a>
+                <a href="https://www.linkedin.com/in/christian-brepoels/" target="_blank" rel="noopener noreferrer">
+                    <img src="Assets/in.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/christianbrepoels/" target="_blank" rel="noopener noreferrer">
+                    <img src="Assets/instagram.png" alt="Instagram">
+                </a>
+            </div>
         </div>
     </section>
+
 </main>
 
-<!-- Footer -->
 <footer>
-    <div class="container">
-        <p>&copy; 2026 Christian Brepoels | <a href="privacy.txt">Privacy-richtlijnen</a></p>
-    </div>
+    <p>
+        &copy; 2026 Christian Brepoels
+    </p>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="JS/main.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 
