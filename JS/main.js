@@ -29,38 +29,53 @@ const appearOnScroll = new IntersectionObserver((entries, observer) => {
 
 faders.forEach(fader => appearOnScroll.observe(fader));
 
-// -------------------- PROGRESS BARS --------------------
+// -------------------- SKILLS PROGRESS --------------------
 const progressBars = document.querySelectorAll('.progress');
 let progressAnimated = false;
 
+const skillPercentages = {
+    html: 60,
+    css: 60,
+    js: 50,
+    figma: 85,
+    illustrator: 75,
+    photoshop: 75,
+    canva: 90,
+    blender: 40,
+    lua: 55
+};
+
+function animateSkills() {
+    progressBars.forEach(bar => {
+        for (const skill in skillPercentages) {
+            if (bar.classList.contains(skill)) {
+                bar.style.width = skillPercentages[skill] + '%';
+            }
+        }
+    });
+    progressAnimated = true;
+}
+
 window.addEventListener('scroll', () => {
     if (progressAnimated) return;
-    const speciale = document.getElementById('speciale');
-    if (!speciale) return;
+    const skillsSection = document.getElementById('skills');
+    if (!skillsSection) return;
 
-    const pos = speciale.getBoundingClientRect().top;
+    const pos = skillsSection.getBoundingClientRect().top;
     if (pos < window.innerHeight - 50) {
-        progressBars.forEach(bar => {
-            if (bar.classList.contains('html')) bar.style.width = '90%';
-            if (bar.classList.contains('css')) bar.style.width = '80%';
-            if (bar.classList.contains('js')) bar.style.width = '70%';
-        });
-        progressAnimated = true;
+        animateSkills();
     }
 });
 
 // -------------------- MOBILE NAV TOGGLE --------------------
 const nav = document.querySelector('nav ul');
-const toggleBtn = document.createElement('button');
-toggleBtn.textContent = "☰";
-toggleBtn.classList.add('nav-toggle');
-document.querySelector('nav').prepend(toggleBtn);
+const toggleBtn = document.querySelector('.nav-toggle');
 
 toggleBtn.addEventListener('click', () => {
     nav.classList.toggle('active');
 });
 
-// -------------------- ABOUT SECTION PHOTO FADE-IN + ZOOM --------------------
+// -------------------- ABOUT PHOTO FADE-IN + ZOOM --------------------
 const aboutImg = document.querySelector('.about-col-1 img');
 
 window.addEventListener('load', () => {
@@ -75,6 +90,8 @@ window.addEventListener('load', () => {
         aboutImg.style.transform = 'scale(1)';
     }, 200);
 });
+
+
 
 
 

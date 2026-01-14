@@ -7,19 +7,24 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
 
+<!-- HEADER -->
 <header id="header">
     <div class="container">
         <nav>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
             <ul>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#speciale">Speciale</a></li>
+                <li><a href="#hobbies">Hobby’s</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -40,25 +45,31 @@
                 <img src="Assets/cb.png" alt="Christian Brepoels">
             </div>
             <div class="about-col-2">
-                <p>Hallo, ik ben Christian Brepoels, 22 jaar oud en student Digitale Vormgeving.</p>
+                <p>Hallo, ik ben <strong>Christian Brepoels</strong>, 21 jaar oud en student Digitale Vormgeving.</p>
                 <p>Ik werk met Figma, Illustrator, Photoshop, Canva en Blender en heb kennis van HTML, CSS, JavaScript en Lua.</p>
-                <p>Creativiteit, flexibiliteit en samenwerken zijn mijn sterke punten.</p>
+                <p>
+                    In mijn vrije tijd speel ik <strong>euphonium</strong> bij Harmonie Sint-Cecilia Hoeselt,
+                    volg ik <strong>voetbal</strong>, speel ik graag <strong>padel</strong> en doe ik aan <strong>fitness</strong>.
+                    Creativiteit, muziek en sport inspireren mij in alles wat ik doe.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="services" class="fade-in">
+    <section id="skills" class="fade-in">
         <div class="container">
             <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Figma</li>
-                <li>Illustrator</li>
-                <li>Photoshop</li>
-                <li>Canva</li>
-                <li>Blender</li>
-                <li>HTML / CSS / JavaScript / Lua</li>
-            </ul>
+
+            <div class="skill"><p>Figma</p><div class="progress-bar"><div class="progress figma"></div></div></div>
+            <div class="skill"><p>Illustrator</p><div class="progress-bar"><div class="progress illustrator"></div></div></div>
+            <div class="skill"><p>Photoshop</p><div class="progress-bar"><div class="progress photoshop"></div></div></div>
+            <div class="skill"><p>Canva</p><div class="progress-bar"><div class="progress canva"></div></div></div>
+            <div class="skill"><p>Blender</p><div class="progress-bar"><div class="progress blender"></div></div></div>
+            <div class="skill"><p>HTML</p><div class="progress-bar"><div class="progress html"></div></div></div>
+            <div class="skill"><p>CSS</p><div class="progress-bar"><div class="progress css"></div></div></div>
+            <div class="skill"><p>JavaScript</p><div class="progress-bar"><div class="progress js"></div></div></div>
+            <div class="skill"><p>Lua</p><div class="progress-bar"><div class="progress lua"></div></div></div>
         </div>
     </section>
 
@@ -67,43 +78,93 @@
         <div class="container">
             <h2>Projecten</h2>
 
-            <h3>Schoolprojecten</h3>
-            <div class="projects-grid">
-                <!-- Photoshop -->
-                <article class="project"><img src="Assets/schoolproject1.png"><h4>Photoshop</h4></article>
-                <article class="project"><img src="Assets/schoolproject2.png"><h4>Photoshop</h4></article>
-                <article class="project"><img src="Assets/schoolproject3.png"><h4>Photoshop</h4></article>
-
-                <!-- Illustrator -->
-                <article class="project"><img src="Assets/harrypotter.png"><h4>Illustrator</h4></article>
-                <article class="project"><img src="Assets/ninjago.png"><h4>Illustrator</h4></article>
-                <article class="project"><img src="Assets/mylittlepony.png"><h4>Illustrator</h4></article>
-
-                <!-- Dashboard -->
-                <article class="project"><img src="Assets/dashboard.png"><h4>Dashboard Project</h4></article>
+            <!-- PHOTOSHOP -->
+            <h3>Photoshop Projecten</h3>
+            <div class="projects-grid photoshop-grid">
+                <article class="project">
+                    <img src="Assets/schoolproject1.png" alt="Photoshop project 1">
+                    <h5>Project 1</h5>
+                    <p>Een Photoshop-ontwerp waarin twee personen centraal staan, gecombineerd met een groene grafische achtergrond. Het beeld heeft een moderne uitstraling en is geschikt als social media visual.</p>
+                </article>
+                <article class="project">
+                    <img src="Assets/schoolproject2.png" alt="Photoshop project 2">
+                    <h5>Project 2</h5>
+                    <p>Een visuele mockup van een smartphone met daarop een persoon en typografie. Het ontwerp heeft een strakke en professionele look en laat zien hoe beeld en tekst samenkomen in een digitale omgeving.</p>
+                </article>
+                <article class="project">
+                    <img src="Assets/schoolproject3.png" alt="Photoshop project 3">
+                    <h5>Project 3</h5>
+                    <p>Een Photoshop-visual van een persoon met een laptop, geplaatst in een rustige groene compositie met grafische vormen. Het beeld straalt creativiteit en een moderne werksfeer uit.</p>
+                </article>
             </div>
 
-            <h3>Niet-schoolprojecten</h3>
-            <div class="projects-grid">
-                <article class="project"><img src="Assets/spotify.png"><h4>Spotify Cover</h4></article>
-                <article class="project"><img src="Assets/musicplaylist.png"><h4>Spotify Playlist</h4></article>
-
+            <!-- ILLUSTRATOR -->
+            <h3>Illustrator Projecten</h3>
+            <div class="projects-grid illustrator-grid">
                 <article class="project">
-                    <h4>Harmonie Sint Cecilia</h4>
-                    <p>Lid van de harmonie</p>
-                    <a href="https://www.harmoniehoeselt.be/" target="_blank" class="harmonie-link">Bezoek website</a>
+                    <img src="Assets/harrypotter.png" alt="Harry Potter illustratie">
+                    <h5>Harry Potter Illustratie</h5>
+                    <p>Vak: Digitale Illustratie – Karakter- en achtergrondontwerp.</p>
+                </article>
+                <article class="project">
+                    <img src="Assets/ninjago.png" alt="Ninjago illustratie">
+                    <h5>Ninjago Illustratie</h5>
+                    <p>Vak: Digitale Illustratie – Karakters en setting.</p>
+                </article>
+                <article class="project">
+                    <img src="Assets/mylittlepony.png" alt="My Little Pony illustratie">
+                    <h5>My Little Pony Illustratie</h5>
+                    <p>Vak: Digitale Illustratie – Kleurgebruik en stijl.</p>
+                </article>
+            </div>
+
+            <!-- DASHBOARD -->
+            <h3>Dashboard Project</h3>
+            <div class="projects-grid dashboard-grid">
+                <article class="project large-project">
+                    <img src="Assets/dashboard.png" alt="Dashboard project">
+                    <h5>Dashboard Interface</h5>
+                    <p>Vak: Webontwikkeling – UI en functionaliteit.</p>
+                </article>
+            </div>
+
+            <!-- CANVA -->
+            <h3>Eigen Canva Projecten</h3>
+            <div class="projects-grid canva-grid">
+                <article class="project">
+                    <img src="Assets/spotify.png" alt="Spotify playlist cover">
+                    <h5>Spotify Playlist Cover</h5>
+                    <p>Grafisch ontwerp voor Spotify.</p>
+                </article>
+                <article class="project">
+                    <img src="Assets/musicplaylist.png" alt="Music playlist cover">
+                    <h5>Music Playlist Cover</h5>
+                    <p>Grafisch ontwerp voor Spotify.</p>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- SPECIALE -->
-    <section id="speciale" class="fade-in">
+    <!-- HOBBIES -->
+    <section id="hobbies" class="fade-in">
         <div class="container">
-            <h2>Skills Progress</h2>
-            <div class="skill"><p>HTML</p><div class="progress-bar"><div class="progress html"></div></div></div>
-            <div class="skill"><p>CSS</p><div class="progress-bar"><div class="progress css"></div></div></div>
-            <div class="skill"><p>JavaScript</p><div class="progress-bar"><div class="progress js"></div></div></div>
+            <h2>Hobby’s & Sport</h2>
+
+            <div class="hobby-text">
+                <p><strong>Muziek:</strong> Euphonium bij Koninklijke Harmonie Sint-Cecilia Hoeselt.</p>
+                <p><strong>Voetbal:</strong> Volg en beleef ik met passie.</p>
+                <p><strong>Padel:</strong> Actief en competitief.</p>
+                <p><strong>Fitness:</strong> Focus op kracht en conditie.</p>
+            </div>
+
+            <div class="hobby-logos">
+                <a href="https://www.harmoniesintceciliahoeselt.be" target="_blank" rel="noopener noreferrer">
+                    <img src="Assets/harmonie.png" alt="Harmonie Sint-Cecilia Hoeselt">
+                </a>
+                <a href="https://www.instagram.com/the_pe4kers/" target="_blank" rel="noopener noreferrer">
+                    <img src="Assets/pe4kers.png" alt="The Pe4kers">
+                </a>
+            </div>
         </div>
     </section>
 
@@ -113,8 +174,8 @@
             <h2>Contact</h2>
 
             <div class="social-icons">
-                <a href="mailto:christianbrepoels@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <img src="Assets/gmail.png" alt="Email">
+                <a href="mailto:christianbrepoels@gmail.com">
+                    <img src="Assets/gmail.png" alt="E-mail">
                 </a>
                 <a href="https://www.linkedin.com/in/christian-brepoels/" target="_blank" rel="noopener noreferrer">
                     <img src="Assets/in.png" alt="LinkedIn">
@@ -128,15 +189,25 @@
 
 </main>
 
+<!-- FOOTER -->
 <footer>
-    <p>
-        &copy; 2026 Christian Brepoels
-    </p>
+    <p>&copy; 2026 Christian Brepoels | <a href="privacy.txt">Privacy</a></p>
 </footer>
 
+<!-- JS -->
 <script src="JS/main.js"></script>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 
 
 
