@@ -11,7 +11,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-
 <body>
 
 <!-- HEADER -->
@@ -20,38 +19,35 @@
         <nav>
             <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
             <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about-me">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#hobbies">Hobby’s</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hobbies-sport">Hobby's & Sport</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
         <div class="header-text fade-in">
             <h1>Christian <span>Brepoels</span></h1>
-            <p>Grafisch Designer & Programmeur</p>
+            <p>Game Developer, Grafisch Designer & Programmeur</p>
         </div>
     </div>
 </header>
 
 <main>
 
-    <!-- ABOUT -->
-    <section id="about" class="fade-in">
+    <!-- ABOUT ME -->
+    <section id="about-me" class="fade-in">
+        <h2>About Me</h2>
         <div class="container about-container">
             <div class="about-col-1">
                 <img src="Assets/cb.png" alt="Christian Brepoels">
             </div>
             <div class="about-col-2">
                 <p>Hallo, ik ben <strong>Christian Brepoels</strong>, 21 jaar oud en student Digitale Vormgeving.</p>
-                <p>Ik werk met Figma, Illustrator, Photoshop, Canva en Blender en heb kennis van HTML, CSS, JavaScript en Lua.</p>
-                <p>
-                    In mijn vrije tijd speel ik <strong>euphonium</strong> bij Harmonie Sint-Cecilia Hoeselt,
-                    volg ik <strong>voetbal</strong>, speel ik graag <strong>padel</strong> en doe ik aan <strong>fitness</strong>.
-                    Creativiteit, muziek en sport inspireren mij in alles wat ik doe.
-                </p>
+                <p>Ik werk met Figma, Illustrator, Photoshop, Canva en Blender en ken HTML, CSS, JavaScript en Lua.</p>
+                <p>In mijn vrije tijd speel ik <strong>euphonium</strong> bij Harmonie Sint-Cecilia Hoeselt, volg ik <strong>voetbal</strong>, speel ik graag <strong>padel</strong> en doe ik aan <strong>fitness</strong>. Creativiteit, muziek en sport inspireren mij in alles wat ik doe.</p>
+                <p>Ik koos voor Digitale Vormgeving omdat ik een passie heb voor het combineren van creatief ontwerp en technische skills. Door mijn kennis in grafische software en programmeertalen kan ik ideeën van concept tot werkende website of applicatie uitwerken.</p>
             </div>
         </div>
     </section>
@@ -60,7 +56,6 @@
     <section id="skills" class="fade-in">
         <div class="container">
             <h2>Skills</h2>
-
             <div class="skill"><p>Figma</p><div class="progress-bar"><div class="progress figma"></div></div></div>
             <div class="skill"><p>Illustrator</p><div class="progress-bar"><div class="progress illustrator"></div></div></div>
             <div class="skill"><p>Photoshop</p><div class="progress-bar"><div class="progress photoshop"></div></div></div>
@@ -73,97 +68,117 @@
         </div>
     </section>
 
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="fade-in">
+    <!-- PROJECTS -->
+    <section id="projects" class="fade-in">
         <div class="container">
-            <h2>Projecten</h2>
+            <h2>Projects</h2>
 
-            <!-- PHOTOSHOP -->
-            <h3>Photoshop Projecten</h3>
+            <!-- Photoshop -->
+            <h3 class="project-category">Photoshop Projecten</h3>
             <div class="projects-grid photoshop-grid">
-                <article class="project">
+                <article class="project-card">
                     <img src="Assets/schoolproject1.png" alt="Photoshop project 1">
                     <h5>Project 1</h5>
-                    <p>Een Photoshop-ontwerp waarin twee personen centraal staan, gecombineerd met een groene grafische achtergrond. Het beeld heeft een moderne uitstraling en is geschikt als social media visual.</p>
+                    <p>Een Photoshop-ontwerp waarin twee personen centraal staan, gecombineerd met een groene achtergrond.</p>
                 </article>
-                <article class="project">
+                <article class="project-card">
                     <img src="Assets/schoolproject2.png" alt="Photoshop project 2">
                     <h5>Project 2</h5>
-                    <p>Een visuele mockup van een smartphone met daarop een persoon en typografie. Het ontwerp heeft een strakke en professionele look en laat zien hoe beeld en tekst samenkomen in een digitale omgeving.</p>
+                    <p>Een Photoshop-ontwerp met een strakke en professionele look waarin beeld en tekst samenkomen.</p>
                 </article>
-                <article class="project">
+                <article class="project-card">
                     <img src="Assets/schoolproject3.png" alt="Photoshop project 3">
                     <h5>Project 3</h5>
-                    <p>Een Photoshop-visual van een persoon met een laptop, geplaatst in een rustige groene compositie met grafische vormen. Het beeld straalt creativiteit en een moderne werksfeer uit.</p>
+                    <p>Visual van een persoon met laptop in een rustige groene compositie met grafische vormen.</p>
                 </article>
             </div>
 
-            <!-- ILLUSTRATOR -->
-            <h3>Illustrator Projecten</h3>
+            <!-- Illustrator -->
+            <h3 class="project-category">Illustrator Projecten</h3>
             <div class="projects-grid illustrator-grid">
-                <article class="project">
+                <article class="project-card">
                     <img src="Assets/harrypotter.png" alt="Harry Potter illustratie">
                     <h5>Harry Potter Illustratie</h5>
-                    <p>Vak: Digitale Illustratie – Karakter- en achtergrondontwerp.</p>
+                    <p>Een illustratie van Harry Potter. Ik heb de achtergrond zelf gecreëerd.</p>
                 </article>
-                <article class="project">
+                <article class="project-card">
                     <img src="Assets/ninjago.png" alt="Ninjago illustratie">
                     <h5>Ninjago Illustratie</h5>
-                    <p>Vak: Digitale Illustratie – Karakters en setting.</p>
+                    <p>Een tekening uit de bekende serie Lego Ninjago. Ik maakte Sensei Wu en op de achtergrond zie je de vier elementkrachten (vuur, ijs, aarde en bliksem).</p>
                 </article>
-                <article class="project">
+                <article class="project-card">
                     <img src="Assets/mylittlepony.png" alt="My Little Pony illustratie">
                     <h5>My Little Pony Illustratie</h5>
-                    <p>Vak: Digitale Illustratie – Kleurgebruik en stijl.</p>
+                    <p>Een vrolijke tekening met creatieve kleuren en vormen. Alles zelf getekend met de pentool.</p>
                 </article>
             </div>
 
-            <!-- DASHBOARD -->
-            <h3>Dashboard Project</h3>
+            <!-- Dashboard -->
+            <h3 class="project-category">Dashboard Project</h3>
             <div class="projects-grid dashboard-grid">
-                <article class="project large-project">
+                <article class="project-card">
                     <img src="Assets/dashboard.png" alt="Dashboard project">
-                    <h5>Dashboard Interface</h5>
-                    <p>Vak: Webontwikkeling – UI en functionaliteit.</p>
+                    <h5>Dashboard Web</h5>
+                    <p>Dashboard gemaakt in Figma, combineert visueel ontwerp met functionaliteit om vaardigheden te tonen.</p>
                 </article>
             </div>
 
-            <!-- CANVA -->
-            <h3>Eigen Canva Projecten</h3>
+            <!-- Eigen Projecten -->
+            <h3 class="project-category">Eigen Projecten</h3>
             <div class="projects-grid canva-grid">
-                <article class="project">
-                    <img src="Assets/spotify.png" alt="Spotify playlist cover">
-                    <h5>Spotify Playlist Cover</h5>
-                    <p>Grafisch ontwerp voor Spotify.</p>
+                <article class="project-card">
+                    <img src="Assets/roblox.png" alt="Roblox project">
+                    <h5>The Ultimate Obby</h5>
+                    <p><strong>Work in progress:</strong> Een interactieve parcoursgame ontwikkeld in Roblox Studio, waarbij spelers uitdagingen en obstakels moeten overwinnen. Het project combineerde level design met Lua-scripting voor checkpoints, UI-elementen en gameplay-logica.</p>
                 </article>
-                <article class="project">
-                    <img src="Assets/musicplaylist.png" alt="Music playlist cover">
-                    <h5>Music Playlist Cover</h5>
-                    <p>Grafisch ontwerp voor Spotify.</p>
+                <article class="project-card">
+                    <img src="Assets/musicclef.png" alt="Eigen muziek project">
+                    <h5>Music Project</h5>
+                    <p><strong>Work in progress:</strong> Compositie van eigen muziek met Musescore Studio, arrangementen en experimenten met verschillende instrumenten.</p>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- HOBBIES -->
-    <section id="hobbies" class="fade-in">
+    <!-- HOBBY'S & SPORT -->
+    <section id="hobbies-sport" class="fade-in">
         <div class="container">
-            <h2>Hobby’s & Sport</h2>
+            <h2>Hobby's & Sport</h2>
 
-            <div class="hobby-text">
-                <p><strong>Muziek:</strong> Euphonium bij Koninklijke Harmonie Sint-Cecilia Hoeselt.</p>
-                <p><strong>Voetbal:</strong> Volg en beleef ik met passie.</p>
-                <p><strong>Padel:</strong> Actief en competitief.</p>
-                <p><strong>Fitness:</strong> Focus op kracht en conditie.</p>
+            <div class="hobby-row">
+                <div class="hobby-image"><img src="Assets/muziek.png" alt="Muziek"></div>
+                <div class="hobby-text">
+                    <h3>Muziek</h3>
+                    <p>In mijn vrije tijd luister ik veel naar muziek en speel ik zelf het muziekinstrument <strong>euphonium</strong>.
+                        Ik doe dit ook bij de Koninklijke Harmonie Sint-Cecilia Hoeselt.
+                        <a href="https://www.harmoniehoeselt.be/" target="_blank">Link HarmonieHoeselt</a></p>
+                </div>
             </div>
 
-            <div class="hobby-logos">
-                <a href="https://www.harmoniesintceciliahoeselt.be" target="_blank" rel="noopener noreferrer">
-                    <img src="Assets/harmonie.png" alt="Harmonie Sint-Cecilia Hoeselt">
-                </a>
-                <a href="https://www.instagram.com/the_pe4kers/" target="_blank" rel="noopener noreferrer">
-                    <img src="Assets/pe4kers.png" alt="The Pe4kers">
-                </a>
+            <div class="hobby-row">
+                <div class="hobby-image"><img src="Assets/football.png" alt="Voetbal"></div>
+                <div class="hobby-text">
+                    <h3>Voetbal</h3>
+                    <p>In mijn vrije tijd speel ik graag voetbal met vrienden, zowel op een pleintje als op een voetbalveld, en kijk zelf ook veel voetbal. Ik volg ook de topcompetities.</p>
+                </div>
+            </div>
+
+            <div class="hobby-row">
+                <div class="hobby-image"><img src="Assets/padel.png" alt="Padel"></div>
+                <div class="hobby-text">
+                    <h3>Padel</h3>
+                    <p>In het weekend spelen we padel met vrienden voor het plezier.</p>
+                </div>
+            </div>
+
+            <div class="hobby-row">
+                <div class="hobby-image"><img src="Assets/fitness.png" alt="Fitness"></div>
+                <div class="hobby-text">
+                    <h3>Fitness</h3>
+                    <p>Ik ga vaak naar de fitness om aan mezelf te werken. Samen met een vriend heb ik het project <strong>‘The Pe4kers’</strong>, waarbij we elke week een special guest uitnodigen om mee te sporten.
+                        Daarnaast hebben we een Instagram-account waarop we een leaderboard bijhouden.
+                        <a href="https://www.instagram.com/the_pe4kers/" target="_blank">Link The Pe4kers</a></p>
+                </div>
             </div>
         </div>
     </section>
@@ -172,17 +187,10 @@
     <section id="contact" class="fade-in">
         <div class="container">
             <h2>Contact</h2>
-
             <div class="social-icons">
-                <a href="mailto:christianbrepoels@gmail.com">
-                    <img src="Assets/gmail.png" alt="E-mail">
-                </a>
-                <a href="https://www.linkedin.com/in/christian-brepoels/" target="_blank" rel="noopener noreferrer">
-                    <img src="Assets/in.png" alt="LinkedIn">
-                </a>
-                <a href="https://www.instagram.com/christianbrepoels/" target="_blank" rel="noopener noreferrer">
-                    <img src="Assets/instagram.png" alt="Instagram">
-                </a>
+                <a href="https://mail.google.com/mail/?view=cm&to=christianbrepoels@gmail.com" target="_blank"><img src="Assets/gmail.png" alt="E-mail"></a>
+                <a href="https://www.linkedin.com/in/christian-brepoels-594571299/" target="_blank" rel="noopener noreferrer"><img src="Assets/in.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/christianbrepoels/" target="_blank" rel="noopener noreferrer"><img src="Assets/instagram.png" alt="Instagram"></a>
             </div>
         </div>
     </section>
@@ -191,14 +199,29 @@
 
 <!-- FOOTER -->
 <footer>
-    <p>&copy; 2026 Christian Brepoels | <a href="privacy.txt">Privacy</a></p>
+    <p>
+        &copy; 2026 Christian Brepoels |
+        <a href="privacy.txt">Privacy</a> |
+        Made Without Delay
+    </p>
 </footer>
 
 <!-- JS -->
 <script src="JS/main.js"></script>
-
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
