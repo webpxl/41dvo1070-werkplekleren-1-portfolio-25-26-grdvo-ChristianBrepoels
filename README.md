@@ -30,7 +30,7 @@ Alle code en inhoud heb ik zelf aangepast, getest en begrepen.
 
 ## Bronnen en materiaal
 
-- Alle afbeeldingen van projecten zijn eigen werk en gemaakt voor schoolopdrachten of persoonlijke projecten.
+- Alle afbeeldingen van projecten zijn eigen werk en gemaakt voor schoolopdrachten of persoonlijke projecten. Indien externe afbeeldingen zijn gebruikt, komen deze van Pixabay en zijn ze rechtenvrij.
 - De gebruikte iconen en afbeeldingen worden enkel gebruikt binnen dit portfolio.
 - Externe links (zoals LinkedIn en Instagram) verwijzen naar mijn eigen profielen.
 
@@ -41,5 +41,10 @@ Alle code en inhoud heb ik zelf aangepast, getest en begrepen.
 De website is online geplaatst via GitHub Pages (of een andere publicatietool) en is bereikbaar via een publieke URL.
 
 ---
+
+## Live website
+
+De website is online beschikbaar via Netlify:  
+https://resonant-tanuki-fca396.netlify.app/
 
 © 2026 Christian Brepoels
